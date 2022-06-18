@@ -34,13 +34,16 @@ var isValid = function (s) {
 
 // Input: s = "()"
 // Output: true
+console.log(isValid('()'));
 
 // Example 2:
 
 // Input: s = "()[]{}"
 // Output: true
+console.log(isValid('()[]{}'));
 
 // Example 3:
 
 // Input: s = "(]"
 // Output: false
+console.log(isValid('(]'));
