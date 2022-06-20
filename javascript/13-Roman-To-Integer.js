@@ -27,3 +27,24 @@ var romanToInt = function (s) {
 
   return result;
 };
+
+// Example 1:
+
+// Input: s = "III"
+// Output: 3
+// Explanation: III = 3.
+console.log(romanToInt('III'));
+
+// Example 2:
+
+// Input: s = "LVIII"
+// Output: 58
+// Explanation: L = 50, V= 5, III = 3.
+console.log(romanToInt('LVIII'));
+
+// Example 3:
+
+// Input: s = "MCMXCIV"
+// Output: 1994
+// Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+console.log(romanToInt('MCMXCIV'));
