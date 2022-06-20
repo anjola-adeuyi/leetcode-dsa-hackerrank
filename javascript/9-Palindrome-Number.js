@@ -18,6 +18,7 @@ var isPalindrome = function (x) {
   // Creates array from int characters
   // 121 -> [1,2,1]
   let arr = Array.from(String(x), Number);
+  console.log(arr);
 
   // Uses two pointer
   for (let i = 0; i < arr.length; i++) {
@@ -49,3 +50,5 @@ console.log(isPalindrome(-121));
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 console.log(isPalindrome(10));
+
+console.log(isPalindrome('abcba'));
