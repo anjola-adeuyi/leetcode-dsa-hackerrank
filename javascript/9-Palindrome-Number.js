@@ -3,15 +3,30 @@
  * @return {boolean}
  */
 
+// var isPalindrome = function (x) {
+//   if (x < 0) return false;
+//   let num = x;
+//   let reversed = 0;
+//   while (num > 0) {
+//     reversed = reversed * 10 + (num % 10);
+//     num = Math.floor(num / 10);
+//   }
+//   return reversed === x;
+// };
+
 var isPalindrome = function (x) {
-  if (x < 0) return false;
-  let num = x;
-  let reversed = 0;
-  while (num > 0) {
-    reversed = reversed * 10 + (num % 10);
-    num = Math.floor(num / 10);
+  // Creates array from int characters
+  // 121 -> [1,2,1]
+  let arr = Array.from(String(x), Number);
+
+  // Uses two pointer
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== arr[arr.length - 1 - i]) {
+      return false;
+    }
   }
-  return reversed === x;
+
+  return true;
 };
 
 // Example 1:
