@@ -1,0 +1,20 @@
+{
+  "name": "leetcode-dsa-hackerrank",
+  "version": "1.0.0",
+  "description": "Here you can find my solutions of hackerrank and leetcode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank/issues"
+  },
+  "homepage": "https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank#readme"
+}
