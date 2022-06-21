@@ -16,6 +16,7 @@ var twoSum = function (nums, target) {
   }
   return [];
 };
+module.exports = twoSum;
 
 console.log(twoSum([2, 7, 11, 15], 9));
 
@@ -24,5 +25,3 @@ console.log(twoSum([2, 7, 11, 15], 9));
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-
-module.export = twoSum;
