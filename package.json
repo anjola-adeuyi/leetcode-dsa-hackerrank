@@ -4,7 +4,7 @@
   "description": "Here you can find my solutions of hackerrank and leetcode.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank/issues"
   },
-  "homepage": "https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank#readme"
+  "homepage": "https://github.com/anjola-adeuyi/leetcode-dsa-hackerrank#readme",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
 }
