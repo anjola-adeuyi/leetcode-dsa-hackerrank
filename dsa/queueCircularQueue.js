@@ -40,4 +40,19 @@ class CircularQueue {
     }
     return null;
   }
+
+  peek() {
+    if (!this.isEmpty()) {
+      return this.items[this.front];
+    }
+    return null;
+  }
+
+  size() {
+    return this.currentLength;
+  }
+
+  print() {
+    console.log(this.items);
+  }
 }
