@@ -29,9 +29,15 @@ class CircularQueue {
   dequeue() {
     if (!this.isEmpty()) {
       const tempItem = this.items[this.front];
+      this.items[this.front] = null;
       this.front = (this.front + 1) % this.capacity;
       this.currentLength--;
+      if (this.isEmpty()) {
+        this.front = -1;
+        this.rear = -1;
+      }
       return tempItem;
     }
+    return null;
   }
 }
