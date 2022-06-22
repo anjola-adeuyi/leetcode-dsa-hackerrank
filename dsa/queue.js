@@ -11,14 +11,17 @@ class Queue {
     return this.items.shift();
   }
 
-  peek() {
-    return this.items[0];
-  }
-
   isEmpty() {
     return this.items.length === 0;
   }
 
+  peek() {
+    if (!this.isEmpty()) {
+      return this.items[0];
+    }
+    return null;
+  }
+  ß;
   size() {
     return this.items.length;
   }
