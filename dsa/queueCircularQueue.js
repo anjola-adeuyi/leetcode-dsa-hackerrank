@@ -6,4 +6,12 @@ class CircularQueue {
     this.front = -1;
     this.rear = -1;
   }
+
+  isFull() {
+    return this.currentLength === this.capacity;
+  }
+
+  isEmpty() {
+    return this.currentLength === 0;
+  }
 }
