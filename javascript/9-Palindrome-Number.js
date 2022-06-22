@@ -30,6 +30,8 @@ var isPalindrome = function (x) {
   return true;
 };
 
+module.exports = isPalindrome;
+
 // Example 1:
 
 // Input: x = 121
