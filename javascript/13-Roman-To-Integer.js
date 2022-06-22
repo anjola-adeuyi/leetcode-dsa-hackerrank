@@ -87,6 +87,8 @@ var romanToInt = function (s) {
   return sum;
 };
 
+module.exports = romanToInt;
+
 // Example 1:
 
 // Input: s = "III"
