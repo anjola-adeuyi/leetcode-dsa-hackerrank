@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 9-Palindrome-Number.js</title>
+    <title>Code coverage report for 11-Container-With-Most-Water.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> 9-Palindrome-Number.js</h1>
+        <h1><a href="index.html">All files</a> 11-Container-With-Most-Water.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -109,17 +109,8 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,30 +127,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,68 +153,54 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * @param {number} x
- * @return {boolean}
+ * @param {number[]} height
+ * @return {number}
  */
 &nbsp;
-// var isPalindrome = function (x) {
-//   if (x &lt; 0) return false;
-//   let num = x;
-//   let reversed = 0;
-//   while (num &gt; 0) {
-//     reversed = reversed * 10 + (num % 10);
-//     num = Math.floor(num / 10);
+// var maxArea = function (height) {
+//   let max = 0;
+//   for (let i = 0; i &lt; height.length; i++) {
+//     for (let j = i + 1; j &lt; height.length; j++) {
+//       let area = Math.min(height[i], height[j]) * (j - i);
+//       max = Math.max(max, area);
+//     }
 //   }
-//   return reversed === x;
+&nbsp;
+//   return max;
 // };
 &nbsp;
-var isPalindrome = function (x) {
-  // Creates array from int characters
-  // 121 -&gt; [1,2,1]
-  let arr = Array.from(String(x), Number);
-  console.log(arr);
+var maxArea = function (height) {
+  let max = 0;
+  let i = 0;
+  let j = height.length - 1;
 &nbsp;
-  // Uses two pointer
-  for (let i = 0; i &lt; arr.length; i++) {
-    if (arr[i] !== arr[arr.length - 1 - i]) {
-      return false;
+  while (i &lt; j) {
+    curr = (j - i) * Math.min(height[i], height[j]);
+    max = Math.max(curr, max);
+    if (height[i] &gt; height[j]) {
+      j--;
+    } else {
+      i++;
     }
   }
-&nbsp;
-  return true;
+  return max;
 };
 &nbsp;
-module.exports = isPalindrome;
+module.exports = maxArea;
 &nbsp;
-// Example 1:
-&nbsp;
-// Input: x = 121
-// Output: true
-// Explanation: 121 reads as 121 from left to right and from right to left.
-console.log(isPalindrome(121));
+// Example 1
+// Input: height = [1,8,6,2,5,4,8,3,7]
+// Output: 49
+// Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]));
 &nbsp;
 // Example 2:
-&nbsp;
-// Input: x = -121
-// Output: false
-// Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-console.log(isPalindrome(-121));
-&nbsp;
-// Example 3:
-&nbsp;
-// Input: x = 10
-// Output: false
-// Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
-console.log(isPalindrome(10));
-&nbsp;
-console.log(isPalindrome('abcba'));
+// Input: height = [1,1]
+// Output: 1
+console.log(maxArea([1, 1]));
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655933655972" clover="3.2.0">
-  <project timestamp="1655933655972" name="All files">
-    <metrics statements="23" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="29" coveredelements="28" complexity="0" loc="23" ncloc="23" packages="1" files="2" classes="2"/>
+<coverage generated="1655933860131" clover="3.2.0">
+  <project timestamp="1655933860131" name="All files">
+    <metrics statements="37" coveredstatements="36" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3" elements="46" coveredelements="45" complexity="0" loc="37" ncloc="37" packages="1" files="3" classes="3"/>
     <file name="1-Two-Sum.js" path="/Users/anjolaoluwaadeuyi/Documents/Personal Projects/leetcode-dsa-hackerrank/javascript/1-Two-Sum.js">
       <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="7" count="1" type="stmt"/>
@@ -15,6 +15,23 @@
       <line num="17" count="0" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
       <line num="21" count="1" type="stmt"/>
+    </file>
+    <file name="11-Container-With-Most-Water.js" path="/Users/anjolaoluwaadeuyi/Documents/Personal Projects/leetcode-dsa-hackerrank/javascript/11-Container-With-Most-Water.js">
+      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="23" count="4" type="stmt"/>
+      <line num="24" count="18" type="stmt"/>
+      <line num="25" count="18" type="stmt"/>
+      <line num="26" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="4" type="stmt"/>
+      <line num="29" count="14" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
     </file>
     <file name="9-Palindrome-Number.js" path="/Users/anjolaoluwaadeuyi/Documents/Personal Projects/leetcode-dsa-hackerrank/javascript/9-Palindrome-Number.js">
       <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
