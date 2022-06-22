@@ -14,4 +14,15 @@ class CircularQueue {
   isEmpty() {
     return this.currentLength === 0;
   }
+
+  enqueue(element) {
+    if (!this.isFull()) {
+      this.rear = (this.rear + 1) % this.capacity;
+      this.items[this.rear] = element;
+      this.currentLength++;
+      if (this.front === -1) {
+        this.front = this.rear;
+      }
+    }
+  }
 }
