@@ -12,7 +12,7 @@ class Stack {
   }
 
   peak() {
-    return this.items[0];
+    return this.items[this.items.length - 1];
   }
 
   isEmpty() {
@@ -20,7 +20,6 @@ class Stack {
   }
 
   size() {
-    if (this.isEmpty) return 0;
     return this.items.length;
   }
 
@@ -28,3 +27,17 @@ class Stack {
     console.log(this.items.toString());
   }
 }
+
+const stack = new Stack();
+console.log(stack.isEmpty());
+
+stack.push(20);
+stack.push(10);
+stack.push(30);
+
+console.log(stack.isEmpty());
+console.log(stack.size());
+stack.print();
+
+console.log(stack.pop());
+console.log(stack.peak());
