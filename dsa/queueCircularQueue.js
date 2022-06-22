@@ -25,4 +25,13 @@ class CircularQueue {
       }
     }
   }
+
+  dequeue() {
+    if (!this.isEmpty()) {
+      const tempItem = this.items[this.front];
+      this.front = (this.front + 1) % this.capacity;
+      this.currentLength--;
+      return tempItem;
+    }
+  }
 }
