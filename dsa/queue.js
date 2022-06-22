@@ -21,7 +21,7 @@ class Queue {
     }
     return null;
   }
-  ß;
+
   size() {
     return this.items.length;
   }
