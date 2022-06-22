@@ -30,6 +30,8 @@ var isValid = function (s) {
   return charStack.length === 0;
 };
 
+module.exports = isValid;
+
 // Example 1:
 
 // Input: s = "()"
