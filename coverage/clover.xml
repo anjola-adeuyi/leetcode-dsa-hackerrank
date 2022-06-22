@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655933655972" clover="3.2.0">
+  <project timestamp="1655933655972" name="All files">
+    <metrics statements="23" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="29" coveredelements="28" complexity="0" loc="23" ncloc="23" packages="1" files="2" classes="2"/>
+    <file name="1-Two-Sum.js" path="/Users/anjolaoluwaadeuyi/Documents/Personal Projects/leetcode-dsa-hackerrank/javascript/1-Two-Sum.js">
+      <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="11" count="4" type="stmt"/>
+      <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+    </file>
+    <file name="9-Palindrome-Number.js" path="/Users/anjolaoluwaadeuyi/Documents/Personal Projects/leetcode-dsa-hackerrank/javascript/9-Palindrome-Number.js">
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="stmt"/>
+      <line num="24" count="8" type="stmt"/>
+      <line num="25" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="6" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

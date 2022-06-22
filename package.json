@@ -4,7 +4,9 @@
   "description": "Here you can find my solutions of hackerrank and leetcode.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
