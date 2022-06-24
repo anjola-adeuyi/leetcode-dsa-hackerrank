@@ -64,7 +64,7 @@ class CircularQueue {
         str += this.items[i] + ' ';
       }
       str += this.items[i];
-      console.log('i', i);
+      // console.log('i', i);
       console.log(str);
     }
   }
