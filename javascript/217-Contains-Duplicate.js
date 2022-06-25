@@ -7,6 +7,8 @@ var containsDuplicate = function (nums) {
   return setCheck.size != nums.length;
 };
 
+module.exports = containsDuplicate;
+
 // Example 1:
 // Input: nums = [1,2,3,1]
 // Output: true
