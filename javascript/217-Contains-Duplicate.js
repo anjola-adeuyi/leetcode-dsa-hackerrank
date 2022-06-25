@@ -2,9 +2,22 @@
  * @param {number[]} nums
  * @return {boolean}
  */
+
+// var containsDuplicate = function (nums) {
+//   const hashSet = new Set(nums);
+//   return hashSet.size != nums.length;
+// };
+
 var containsDuplicate = function (nums) {
-  const setCheck = new Set(nums);
-  return setCheck.size != nums.length;
+  const hashSet = new Set();
+
+  for (num of nums) {
+    if (hashSet.has(num)) {
+      return true;
+    }
+    hashSet.add(num);
+  }
+  return false;
 };
 
 module.exports = containsDuplicate;
