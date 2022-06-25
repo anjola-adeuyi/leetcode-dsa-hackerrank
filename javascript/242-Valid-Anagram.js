@@ -27,7 +27,7 @@ var isAnagram = function (s, t) {
     }
   }
 
-  return hashMap;
+  return true;
 };
 
 module.exports = isAnagram;
