@@ -4,18 +4,33 @@
  * @return {number[]}
  */
 
+// var twoSum = function (nums, target) {
+//   let map = {};
+//   for (let i = 0; i < nums.length; i++) {
+//     let num = nums[i];
+//     let diff = target - num;
+//     if (map[diff] !== undefined) {
+//       return [map[diff], i];
+//     }
+//     map[num] = i;
+//   }
+//   return [];
+// };
+
 var twoSum = function (nums, target) {
-  let map = {};
+  const hashMap = {};
+
   for (let i = 0; i < nums.length; i++) {
-    let num = nums[i];
-    let diff = target - num;
-    if (map[diff] !== undefined) {
-      return [map[diff], i];
+    let complementary = target - nums[i];
+
+    if (complementary in hashMap) {
+      return [hashMap[complementary], i];
     }
-    map[num] = i;
+
+    hashMap[nums[i]] = i;
   }
-  return [];
 };
+
 module.exports = twoSum;
 
 console.log(twoSum([2, 7, 11, 15], 9));

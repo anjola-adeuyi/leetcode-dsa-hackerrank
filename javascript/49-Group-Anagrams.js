@@ -113,6 +113,7 @@ module.exports = groupAnagrams;
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
+console.log(groupAnagrams(['a', 'b', 'c']));
 
 // Example 2:
 // Input: strs = [""]
