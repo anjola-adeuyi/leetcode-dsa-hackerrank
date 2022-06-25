@@ -39,22 +39,25 @@ const CODES = {
  * @param {string[]} words
  * @return {string[][]}
  */
-function groupAnagrams(words) {
-  const map = Object.create(null);
-  console.log('map', map);
+function groupAnagrams(strs) {
+  // const hashMap = Object.create(null);
+  const hashMap = {};
 
-  for (const word of words) {
-    const hash = hashWord(word);
-    if (!(hash in map)) {
-      map[hash] = [];
+  for (let word of strs) {
+    const hashedWord = hashWord(word);
+
+    if (!(hashedWord in hashMap)) {
+      hashMap[hashedWord] = [];
     }
-    map[hash].push(word);
+    hashMap[hashedWord].push(word);
   }
 
-  const groups = [];
-  for (const key in map) {
-    groups.push(map[key]);
+  let groups = [];
+
+  for (let key in hashMap) {
+    groups.push(hashMap[key]);
   }
+
   return groups;
 }
 
@@ -62,11 +65,14 @@ function groupAnagrams(words) {
  * @param {string} word
  * @return {string}
  */
+
 function hashWord(word) {
   const hash = new Array(26).fill(0);
-  for (const ch of word) {
-    ++hash[CODES[ch]];
+
+  for (let character of word) {
+    hash[CODES[character]]++;
   }
+
   return hash.toString();
 }
 
@@ -102,3 +108,16 @@ function hashWord(word) {
 // };
 
 module.exports = groupAnagrams;
+
+// Example 1:
+// Input: strs = ["eat","tea","tan","ate","nat","bat"]
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
+
+// Example 2:
+// Input: strs = [""]
+// Output: [[""]]
+
+// Example 3:
+// Input: strs = ["a"]
+// Output: [["a"]]
