@@ -37,4 +37,46 @@ routes.forEach(([origin, destination]) => addEdge(origin, destination));
 console.log('adjacencyList:', adjacencyList);
 
 // BFS Breadth First Search
-function bfs(start) {}
+// function bfs(start) {
+//   const visited = new Set();
+//   const queue = [start];
+
+//   while (queue.length) {
+//     const airport = queue.shift();
+//     const destinations = adjacencyList.get(airport);
+
+//     console.log('destinations:', destinations);
+
+//     if (!visited.has(airport)) {
+//       visited.add(airport);
+//       console.log(airport);
+//       queue.push(...destinations);
+//     }
+//   }
+// }
+
+function bfs(start) {
+  const visited = new Set();
+  const queue = [start];
+
+  while (queue.length > 0) {
+    const airport = queue.shift();
+    const destinations = adjacencyList.get(airport);
+
+    for (const destination of destinations) {
+      queue.push(destination);
+
+      if (destination == 'BKK') {
+        console.log('Found BKK!!!');
+      }
+
+      if (!visited.has(destination)) {
+        visited.add(destination);
+        // queue.push(destination);
+        console.log('destination:', destination);
+      }
+    }
+  }
+}
+
+bfs('PHX');
